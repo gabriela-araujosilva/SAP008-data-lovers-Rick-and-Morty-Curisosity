@@ -8,11 +8,11 @@ img {
 
 .HOME,
 .INFO {
+    width: 220px;
+    height: 40px;
     align-items: center;
     margin-top: 2px;
     margin-bottom: 2px;
-    width: 220px;
-    height: 40px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 16px;
     text-align: center;
@@ -86,8 +86,8 @@ select {
     overflow: hidden;
     align-items: center;
     justify-content: center;
-    height: 390px;
-    width: 250px;
+    height: 90%;
+    width: 95%;
     background-color: #9C4085;
     background-image: url(CARD.jpg);
     background-repeat: no-repeat;
@@ -96,6 +96,7 @@ select {
     border-radius: 25px;
     padding: 15px 0;
     margin: 10px;
+    margin-bottom: 25px;
 }
 
 .quadro-imagem {

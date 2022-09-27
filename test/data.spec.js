@@ -38,11 +38,11 @@ describe('functionSearch', () => {
     expect(typeof searchCharacters).toBe('function');
   });
 
-  it('Deverá buscar por um nome', () => {
+  it('Deverá buscar por um nome que não existe e retornar vazio', () => {
     const expected = searchCharacters(names, 'aranha')
     expect(expected).toEqual([])
   });
-  it('Deverá buscar por um nome', () => {
+  it('Deverá buscar por um nome que existe e retornar um personagem', () => {
     const expected = searchCharacters(names, 'Rick')
     expect(expected).toEqual([{ "name": "Rick Sanchez" }])
   });
@@ -71,7 +71,7 @@ describe('filterSpecies', () => {
     expect(typeof filterCharacters).toBe('function');
   });
 
-  it('Deverá filtrar pela espécie Humana', () => {
+  it('Deverá filtrar pela espécie e retornar a espécie Human', () => {
     const humanExpected = "Human"
     const expected = filterCharacters(newArray, 'species', humanExpected);
     expect(expected.length).toEqual(2);
@@ -87,7 +87,7 @@ describe('filterGender', () => {
     expect(typeof filterCharacters).toBe('function');
   });
 
-  it('Deverá filtrar por Gênero', () => {
+  it('Deverá filtrar por gênero e retornar Female', () => {
     const femaleExpected = "Female"
     const expected = filterCharacters(newArray, 'gender', femaleExpected);
     expect(expected.length).toEqual(2);
@@ -98,24 +98,18 @@ describe('filterGender', () => {
 
 //--Teste ordenação alfabética--//
 
-
 describe('sortOrder', () => {
   it('Deverá ser uma função', () => {
     expect(typeof sortCharacters).toBe('function');
   });
 
-  it('Deverá retornar em ordem crescente', () => {
+  it('Deverá retornar o nome dos personagens em ordem crescente', () => {
     const namesExpected = [names[2], names[0], names[1]];
-    expect(sortCharacters(names, "crescente")).toEqual( namesExpected );
+    expect(sortCharacters(names, "crescente")).toEqual(namesExpected);
   });
-  it('Deverá retornar em ordem decrescente', () => {
+  it('Deverá retornar o nome dos personagens em ordem decrescente', () => {
     const namesDecrescente = [names[2], names[1], names[0]];
     expect(sortCharacters(names, "decrescente")).toEqual(namesDecrescente);
-  });
-  it('Deverá retornar em ordem decrescente linha 24', () => {
-    const namesToSort = [names[0], names[1], names[2]];
-    const namesDecrescente = [namesToSort[0], namesToSort[1], namesToSort[2]];
-    expect(sortCharacters(namesToSort, "decrescente")).toEqual(namesDecrescente);
   });
 });
 
@@ -129,5 +123,5 @@ describe('calPercentage', () => {
   it('Deverá retornar  porcentagem de personagens femininos', () => {
     const percentageExpected = getPercentage(newArray, 'Female');
     expect(percentageExpected).toEqual('66.67');
-});
   });
+});

@@ -32,7 +32,7 @@ const listarCards = () => {
     let optionStatus = selectStatus.options[selectStatus.selectedIndex];
     let optionGender = selectGender.options[selectGender.selectedIndex];
     let optionSpecie = selectSpecie.options[selectSpecie.selectedIndex];
-    let optionOrderAz = selectOrderAz.options[selectOrderAz.selectedIndex]; //index indica a posição do combo que foi selecionada//
+    let optionOrderAz = selectOrderAz.options[selectOrderAz.selectedIndex];               
 
     let characters = allCharacters;
     characters = filterCharacters(characters, 'gender', optionGender.value);
