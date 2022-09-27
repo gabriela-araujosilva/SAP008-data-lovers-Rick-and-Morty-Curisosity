@@ -78,9 +78,13 @@ O usuário consegue exibir na tela em forma de alert a porcentagem referente aos
 ## 6. Testes Unitários
 Utilizamos dois arrays mock ( newArray e names) simulando um array para a criação dos testes.
 
+![](testes.png)
+
 
 ## 7. Testes de Usabilidade
 Foi realizado  o teste de usabilidade com dois usuários onde estão descritos abaixo os problemas detectados e como foram solucionados.
+
+
 
 **Primeiro usuário**: 
 Ao iniciar a navegação pela página o usuário sentiu dificuldades na visualização, pois o card apresentava dimensões muito grandes e desproporcionais a tela.
