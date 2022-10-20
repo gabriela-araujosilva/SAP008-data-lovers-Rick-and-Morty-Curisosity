@@ -24,7 +24,7 @@ img {
     width: 220px;
     height: 40px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     text-align: center;
     background-color: #71D336;
     border-color: #199c24;
@@ -43,7 +43,7 @@ img {
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-size: 16px;
+    font-size: 1.2rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
 
