@@ -12,15 +12,15 @@ let allCharacters = rickandmorty.results
 function gerarCard(personagem) {
     return `
             <div>
-                <div class="quadro-card">
+                <div class="board-card">
                     <div>
-                        <img class="quadro-imagem" src="${personagem.image}">
+                        <img class="picture-frame" src="${personagem.image}">
                     </div>
                     <div class="overLap-group">
-                        <div class="caixa-de-texto caixa-de-texto-status">Status: ${personagem.status}</div>
-                        <div class="caixa-de-texto caixa-de-texto-nome">Name: ${personagem.name}</div>
-                        <div class="caixa-de-texto caixa-de-texto-genero">Gender: ${personagem.gender}</div>
-                        <div class="caixa-de-texto caixa-de-texto-especie">Species: ${personagem.species}</div>
+                        <div class="text-box status-text-box">Status: ${personagem.status}</div>
+                        <div class="text-box name-text-box">Name: ${personagem.name}</div>
+                        <div class="text-box gender-text-box">Gender: ${personagem.gender}</div>
+                        <div class="text-box species-text-box">Species: ${personagem.species}</div>
                     </div>
                 </div>
             </div>
